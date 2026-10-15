@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071a2f">
+  <meta name="description" content="EHA Elektrik — Elektrik taahhüt, yüksek gerilim, pano, aydınlatma ve zayıf akım sistemleri. İstanbul Arnavutköy.">
+  <title>EHA Elektrik | Güvenilir Elektrik Çözümleri</title>
+  <style>
+    :root{--navy:#071a2f;--navy2:#0c2947;--orange:#ff8a24;--cream:#f5f7fa;--ink:#14243a;--muted:#66758a;--white:#fff;--line:#e4e9ef}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+    a{color:inherit;text-decoration:none}.container{width:min(1160px,calc(100% - 40px));margin:auto}
+    .topbar{background:#041221;color:#cbd5e1;font-size:13px;padding:9px 0}.topbar .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    header{position:sticky;top:0;z-index:10;background:rgba(7,26,47,.97);backdrop-filter:blur(12px);color:white;border-bottom:1px solid #ffffff16}
+    .nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:850;letter-spacing:.5px}.brandmark{display:block;width:58px;height:48px;object-fit:contain;border-radius:6px;background:#fff;padding:2px;flex-shrink:0}.brand small{display:block;color:#b7c5d6;font-size:10px;letter-spacing:2.2px;font-weight:700;margin-top:-3px}
+    .links{display:flex;align-items:center;gap:26px;font-size:14px;color:#e0e8f1}.links a:hover{color:var(--orange)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 18px;border-radius:9px;background:var(--orange);color:#101c2b;font-weight:800;border:1px solid var(--orange);transition:.2s}.nav-cta:hover,.btn:hover{transform:translateY(-2px);filter:brightness(1.05)}.menu{display:none;background:none;border:1px solid #ffffff45;color:white;border-radius:8px;padding:8px 11px;font-size:22px}
+    .hero{background:radial-gradient(ellipse at 80% 15%,#17436a 0%,transparent 38%),linear-gradient(115deg,#071a2f 0%,#0b2948 66%,#0c3455 100%);color:white;position:relative;overflow:hidden;padding:90px 0 84px}
+    .hero:after{content:"";position:absolute;right:-90px;bottom:-220px;width:560px;height:560px;border:1px solid #ffffff18;border-radius:50%;box-shadow:0 0 0 55px #ffffff08,0 0 0 110px #ffffff05}
+    .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:52px;position:relative;z-index:1}
+    .eyebrow{display:inline-flex;align-items:center;gap:10px;color:#ffb36e;font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:850}.eyebrow:before{content:"";width:27px;height:2px;background:var(--orange)}
+    h1{font-size:clamp(38px,5.4vw,66px);line-height:1.06;letter-spacing:-2px;margin:20px 0}.hero h1 span{color:var(--orange)}.hero p{font-size:17px;color:#c3d0df;max-width:570px;margin:0 0 28px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.btn-outline{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border:1px solid #ffffff55;border-radius:9px;color:white;font-weight:750}.btn-outline:hover{border-color:var(--orange);color:var(--orange)}
+    .hero-visual{min-height:350px;display:grid;place-items:center;position:relative}.blueprint{width:min(100%,440px);aspect-ratio:1/1;border:1px solid #ffffff30;border-radius:24px;background:linear-gradient(135deg,#ffffff0c,#ffffff02);position:relative;overflow:hidden;display:grid;place-items:center}
+    .blueprint:before,.blueprint:after{content:"";position:absolute;background:#ffffff16}.blueprint:before{width:100%;height:1px;top:50%}.blueprint:after{height:100%;width:1px;left:50%}
+    .circuit{width:73%;height:73%;border:2px solid #ff9b43;border-radius:50%;display:grid;place-items:center;position:relative;box-shadow:0 0 55px #ff8a2420,inset 0 0 45px #ff8a2410}.circuit:before,.circuit:after{content:"";position:absolute;border:1px dashed #8ca8c5;border-radius:50%;inset:12%}.circuit:after{inset:26%;border-style:solid;border-color:#ffffff33}.bolt{font-size:100px;color:var(--orange);text-shadow:0 0 30px #ff8a2440}.float-tag{position:absolute;background:#102f4e;border:1px solid #ffffff26;padding:11px 15px;border-radius:10px;font-size:12px;color:#eaf2fa;box-shadow:0 12px 30px #0002}.float-tag b{color:var(--orange);display:block;font-size:17px}.tag1{top:10%;left:0}.tag2{right:0;bottom:12%}
+    .trust{background:#fff;border-bottom:1px solid var(--line)}.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);padding:25px 0;gap:20px}.trust-item{display:flex;align-items:center;gap:12px}.trust-icon{width:42px;height:42px;display:grid;place-items:center;border-radius:12px;background:#fff2e5;color:#d56b12;font-size:20px}.trust-item b{display:block;font-size:14px}.trust-item small{color:var(--muted);font-size:12px}
+    section{padding:82px 0}.section-head{max-width:650px;margin-bottom:38px}.section-head.center{text-align:center;margin:0 auto 42px}.kicker{font-size:12px;text-transform:uppercase;letter-spacing:2px;font-weight:850;color:#d56b12}.section-head h2{font-size:clamp(29px,3.6vw,42px);line-height:1.14;letter-spacing:-1.2px;margin:10px 0 13px;color:var(--navy)}.section-head p{color:var(--muted);margin:0}
+    .services{background:var(--cream)}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{padding:27px;background:white;border:1px solid var(--line);border-radius:15px;transition:.22s}.service:hover{transform:translateY(-5px);box-shadow:0 18px 38px #0b29480e;border-color:#ffd0a5}.service-icon{width:52px;height:52px;border-radius:14px;background:#fff1e3;display:grid;place-items:center;font-size:25px;margin-bottom:18px}.service h3{font-size:18px;margin:0 0 9px;color:var(--navy)}.service p{font-size:14px;color:var(--muted);margin:0}
+    .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}.about-panel{background:var(--navy);color:white;border-radius:20px;padding:36px;min-height:350px;position:relative;overflow:hidden}.about-panel:after{content:"EHA";position:absolute;font-size:150px;font-weight:950;letter-spacing:-12px;color:#ffffff08;right:-4px;bottom:-42px}.about-panel .big{font-size:28px;line-height:1.25;font-weight:800;position:relative;z-index:1}.about-panel p{color:#c4d1df;position:relative;z-index:1}.mini-line{height:3px;width:55px;background:var(--orange);margin:24px 0}.checks{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:25px}.check{display:flex;gap:10px;font-size:14px;font-weight:650}.check span{color:#df7417;font-weight:900}
+    .projects{background:#f7f9fb}.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.project{background:white;border:1px solid var(--line);border-radius:15px;overflow:hidden}.project-art{height:195px;position:relative;display:grid;place-items:center;color:white;overflow:hidden;background:linear-gradient(135deg,#0c2947,#174c70)}.project-art:before{content:"";position:absolute;width:180px;height:180px;border:1px solid #ffffff36;border-radius:50%;box-shadow:0 0 0 25px #ffffff0a,0 0 0 55px #ffffff07}.project-art span{font-size:58px;position:relative;z-index:1}.project-art.orange{background:linear-gradient(135deg,#7b421a,#f08a2d)}.project-art.gray{background:linear-gradient(135deg,#39485b,#8797a8)}.project-info{padding:20px}.project-info small{color:#d56b12;font-weight:800;text-transform:uppercase;letter-spacing:1px;font-size:10px}.project-info h3{margin:5px 0;font-size:17px;color:var(--navy)}.project-info p{font-size:13px;color:var(--muted);margin:0}
+    .cta{padding:0 0 82px;background:#f7f9fb}.cta-panel{border-radius:20px;background:linear-gradient(110deg,#0a2340,#10436a);padding:40px 45px;color:white;display:flex;align-items:center;justify-content:space-between;gap:28px}.cta-panel h2{font-size:clamp(26px,3vw,36px);line-height:1.2;margin:0 0 8px}.cta-panel p{color:#c4d4e4;margin:0}.cta-panel .btn{white-space:nowrap}
+    .contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px}.contact-cards{display:grid;gap:13px}.contact-card{display:flex;gap:14px;padding:18px;border:1px solid var(--line);border-radius:12px}.contact-card .service-icon{flex-shrink:0;margin:0;width:44px;height:44px}.contact-card b{display:block;color:var(--navy);font-size:14px}.contact-card span,.contact-card a{font-size:13px;color:var(--muted)}.map{min-height:345px;border:0;border-radius:16px;width:100%;background:#e8edf2}.contact-note{margin-top:15px;font-size:12px;color:var(--muted)}
+    footer{background:#041221;color:white;padding:42px 0 20px}.footer-top{display:flex;justify-content:space-between;gap:35px;flex-wrap:wrap;padding-bottom:30px}.footer-brand{max-width:360px}.footer-brand p{color:#a9bacb;font-size:13px}.footer-links{display:flex;gap:20px;flex-wrap:wrap;color:#d3deea;font-size:13px}.footer-bottom{border-top:1px solid #ffffff1b;padding-top:17px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:#8194a9;font-size:12px}
+    .wa-float{position:fixed;right:20px;bottom:20px;z-index:20;background:#20b968;color:white;border-radius:50px;padding:13px 18px;font-weight:850;box-shadow:0 10px 28px #05231430;display:flex;gap:9px;align-items:center}.wa-float:hover{transform:translateY(-2px)}
+    @media(max-width:900px){.links{gap:15px}.hero-grid{gap:24px}.trust-grid{grid-template-columns:repeat(2,1fr)}.service-grid,.project-grid{grid-template-columns:repeat(2,1fr)}.about-grid{gap:30px}.contact-grid{grid-template-columns:1fr}}
+    @media(max-width:680px){.container{width:min(100% - 30px,1160px)}.topbar .container{font-size:11px}.nav{height:68px}.menu{display:block}.links{display:none;position:absolute;left:0;right:0;top:68px;background:var(--navy);padding:18px 22px 24px;flex-direction:column;align-items:stretch;border-bottom:1px solid #ffffff20}.links.open{display:flex}.links .nav-cta{text-align:center}.hero{padding:60px 0 55px}.hero-grid{grid-template-columns:1fr}.hero-visual{min-height:290px}.blueprint{max-width:330px}.bolt{font-size:76px}.float-tag{font-size:10px}.tag1{left:2%}.tag2{right:1%}.trust-grid{gap:15px;padding:20px 0}.trust-item{gap:8px}.trust-icon{width:36px;height:36px}.trust-item b{font-size:12px}.trust-item small{font-size:10px}section{padding:60px 0}.service-grid,.project-grid{grid-template-columns:1fr}.service{padding:23px}.about-grid{grid-template-columns:1fr}.about-panel{min-height:280px;padding:27px}.checks{grid-template-columns:1fr}.cta{padding-bottom:60px}.cta-panel{padding:29px 24px;align-items:flex-start;flex-direction:column}.cta-panel .btn{width:100%}.map{min-height:280px}.footer-top{flex-direction:column}.wa-float{right:12px;bottom:12px;padding:12px 14px;font-size:13px}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="container"><span>📍 İstanbul · Arnavutköy</span><span>Elektrik taahhüt ve mühendislik çözümleri</span></div></div>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#anasayfa" aria-label="EHA Elektrik ana sayfa"><img class="brandmark" src="eha-logo.jpg" alt="EHA Elektrik logosu"><span>EHA ELEKTRİK<small>GÜÇ · GÜVEN · ÇÖZÜM</small></span></a>
+      <button class="menu" id="menuBtn" aria-label="Menüyü aç">☰</button>
+      <nav class="links" id="navLinks"><a href="#anasayfa">Ana Sayfa</a><a href="#hizmetler">Hizmetler</a><a href="#projeler">Projeler</a><a href="#hakkimizda">Hakkımızda</a><a href="#iletisim">İletişim</a><a class="nav-cta" href="#iletisim">Teklif Al ↗</a></nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="anasayfa"><div class="container hero-grid">
+      <div><div class="eyebrow">Güvenilir elektrik çözümleri</div><h1>Gücünüzü<br><span>doğru çözümlerle</span><br>buluşturuyoruz.</h1><p>EHA Elektrik olarak elektrik taahhüt, yüksek gerilim, pano, aydınlatma ve zayıf akım sistemlerinde güvenilir ve planlı çözümler sunuyoruz.</p><div class="hero-actions"><a class="btn" href="#iletisim">Projeniz İçin Teklif Al <span>↗</span></a><a class="btn-outline" href="#hizmetler">Hizmetlerimizi Keşfedin</a></div></div>
+      <div class="hero-visual"><div class="blueprint"><div class="circuit"><div class="bolt">ϟ</div></div><div class="float-tag tag1"><b>Uçtan Uca</b>Elektrik çözümleri</div><div class="float-tag tag2"><b>Güvenli çalışma</b>Planlı uygulama</div></div></div>
+    </div></section>
+    <div class="trust"><div class="container trust-grid">
+      <div class="trust-item"><div class="trust-icon">⌁</div><div><b>Elektrik Taahhüt</b><small>Projelendirme ve uygulama</small></div></div>
+      <div class="trust-item"><div class="trust-icon">ϟ</div><div><b>Yüksek Gerilim</b><small>Uzmanlık gerektiren işler</small></div></div>
+      <div class="trust-item"><div class="trust-icon">▦</div><div><b>Pano Sistemleri</b><small>Montaj ve bağlantı</small></div></div>
+      <div class="trust-item"><div class="trust-icon">✓</div><div><b>İş Güvenliği</b><small>Özenli ve planlı çalışma</small></div></div>
+    </div></div>
+    <section class="services" id="hizmetler"><div class="container"><div class="section-head center"><div class="kicker">Hizmetlerimiz</div><h2>İhtiyacınıza uygun, sağlam çözümler</h2><p>Projenizin keşif aşamasından montaj ve devreye alma süreçlerine kadar elektrik uygulamalarında yanınızdayız.</p></div>
+      <div class="service-grid">
+        <article class="service"><div class="service-icon">ϟ</div><h3>Elektrik Taahhüt</h3><p>Yeni tesis, ticari alan ve endüstriyel projeler için kablolama, altyapı ve elektrik tesisatı uygulamaları.</p></article>
+        <article class="service"><div class="service-icon">⚡</div><h3>Yüksek Gerilim İşleri</h3><p>Proje kapsamına ve ilgili standartlara uygun yüksek gerilim altyapısı ve saha uygulamaları.</p></article>
+        <article class="service"><div class="service-icon">▦</div><h3>Elektrik Panoları</h3><p>Dağıtım panoları, kumanda panoları, bağlantılar ve saha montajı hizmetleri.</p></article>
+        <article class="service"><div class="service-icon">✳</div><h3>Aydınlatma Sistemleri</h3><p>İç ve dış mekân aydınlatmaları, LED armatürler, sensörler ve kontrol bağlantıları.</p></article>
+        <article class="service"><div class="service-icon">⌁</div><h3>Zayıf Akım Sistemleri</h3><p>Kamera, data, fiber optik, yangın algılama ve diğer zayıf akım altyapıları.</p></article>
+        <article class="service"><div class="service-icon">⚙</div><h3>Bakım ve Arıza</h3><p>Elektrik sistemlerinde kontrol, arıza tespiti, bakım ve iyileştirme çalışmaları.</p></article>
+      </div>
+    </div></section>
+    <section id="hakkimizda"><div class="container about-grid">
+      <div class="about-panel"><div class="big">Her projede güvenilirlik, kalite ve doğru işçilik.</div><div class="mini-line"></div><p>İhtiyacı doğru anlayan, sahada çözüm üreten ve işini titizlikle tamamlamayı hedefleyen bir ekibiz.</p></div>
+      <div><div class="section-head"><div class="kicker">EHA Elektrik hakkında</div><h2>İşinizin her aşamasında yanınızdayız.</h2><p>İstanbul Arnavutköy merkezli EHA Elektrik; konut, ticari alan ve endüstriyel projeler için elektrik uygulamaları ve saha çözümleri sunar. Her projede kapsam, iş güvenliği ve uygulama kalitesini ön planda tutar.</p></div>
+        <div class="checks"><div class="check"><span>✓</span> İhtiyaca özel çözümler</div><div class="check"><span>✓</span> Planlı saha organizasyonu</div><div class="check"><span>✓</span> Kaliteli malzeme ve işçilik</div><div class="check"><span>✓</span> Açık iletişim ve takip</div></div>
+      </div>
+    </div></section>
+    <section class="projects" id="projeler"><div class="container"><div class="section-head"><div class="kicker">Proje galerisi</div><h2>Çalışmalarımızdan örnekler</h2><p>Bu alan, tamamlanan gerçek projelerinizin fotoğrafları ve kısa açıklamalarıyla güncellenmek üzere hazırlandı.</p></div>
+      <div class="project-grid">
+        <article class="project"><div class="project-art"><span>▦</span></div><div class="project-info"><small>Elektrik altyapısı</small><h3>Elektrik Tesisatı ve Kablolama</h3><p>Kablo çekimi, hat düzenleme ve saha bağlantıları.</p></div></article>
+        <article class="project"><div class="project-art orange"><span>ϟ</span></div><div class="project-info"><small>Aydınlatma</small><h3>Aydınlatma Uygulamaları</h3><p>Armatür, sensör ve aydınlatma kontrol montajları.</p></div></article>
+        <article class="project"><div class="project-art gray"><span>⌁</span></div><div class="project-info"><small>Zayıf akım</small><h3>Kamera ve Data Altyapısı</h3><p>Kamera, data ve fiber optik altyapı uygulamaları.</p></div></article>
+      </div>
+    </div></section>
+    <div class="cta"><div class="container"><div class="cta-panel"><div><h2>Projenizi birlikte hayata geçirelim.</h2><p>İhtiyacınızı anlatın, size uygun çözümü ve teklif sürecini konuşalım.</p></div><a class="btn" href="#iletisim">Bizimle İletişime Geçin ↗</a></div></div></div>
+    <section id="iletisim"><div class="container"><div class="section-head"><div class="kicker">İletişim</div><h2>Projeniz için bize ulaşın</h2><p>Keşif, hizmet kapsamı ve teklif talepleriniz için bizimle iletişime geçebilirsiniz.</p></div>
+      <div class="contact-grid"><div class="contact-cards">
+        <div class="contact-card"><div class="service-icon">⌖</div><div><b>Konum</b><span>Arnavutköy, İstanbul, Türkiye</span></div></div>
+        <div class="contact-card"><div class="service-icon">☏</div><div><b>Telefon</b><a href="tel:+905344811807">0534 481 18 07</a></div></div>
+        <div class="contact-card"><div class="service-icon">✉</div><div><b>E-posta</b><a href="mailto:info@ehaelektrik.com">E-posta adresinizi ekleyin</a></div></div>
+        <a class="btn" href="https://wa.me/905344811807?text=Merhaba%20EHA%20Elektrik%2C%20projem%20i%C3%A7in%20teklif%20almak%20istiyorum." target="_blank" rel="noopener">WhatsApp'tan Teklif İste ↗</a>
+        <p class="contact-note">Yayınlamadan önce telefon ve e-posta alanlarını kendi bilgilerinizle değiştirin.</p>
+      </div>
+      <iframe class="map" title="Arnavutköy İstanbul haritası" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Arnavutkoy%2C%20Istanbul%2C%20Turkey&t=&z=11&ie=UTF8&iwloc=&output=embed"></iframe>
+      </div>
+    </div></section>
+  </main>
+  <footer><div class="container"><div class="footer-top"><div class="footer-brand"><a class="brand" href="#anasayfa"><img class="brandmark" src="eha-logo.jpg" alt="EHA Elektrik logosu"><span>EHA ELEKTRİK<small>GÜÇ · GÜVEN · ÇÖZÜM</small></span></a><p>Elektrik taahhüt, yüksek gerilim ve zayıf akım sistemlerinde profesyonel saha çözümleri.</p></div><div class="footer-links"><a href="#hizmetler">Hizmetler</a><a href="#projeler">Projeler</a><a href="#hakkimizda">Hakkımızda</a><a href="#iletisim">İletişim</a></div></div><div class="footer-bottom"><span>© <span id="year"></span> EHA Elektrik. Tüm hakları saklıdır.</span><span>İstanbul · Arnavutköy</span></div></div></footer>
+  <a class="wa-float" href="https://wa.me/905344811807?text=Merhaba%20EHA%20Elektrik%2C%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" aria-label="WhatsApp ile iletişim">◉ WhatsApp</a>
+  <script>
+    const menuBtn=document.getElementById('menuBtn'),navLinks=document.getElementById('navLinks');
+    menuBtn.addEventListener('click',()=>navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
